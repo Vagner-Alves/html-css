@@ -17,7 +17,7 @@
 
     <h2 id="surgimento">Como a Internet foi Criada</h2>
     <small><a href="#inicio">(voltar)</a></small>
-    <p>A rede mundial de computadores ( Internet) teve inicio com a chamada Arpanet, 
+    <p> <strong>A rede mundial de computadores ( Internet):</strong> teve inicio com a chamada Arpanet, 
     uma rede de troca de informações que tinha o objetivo conectar
     instalações de pesquisa militares com o Pentágono, nos estados unidos em 1960.
     "A internet chegou ao Brasil somente no final da década de 1980.A internet é atualmente o 
@@ -31,16 +31,32 @@
 
     <h2 id="clientexservidor">Clientes e Servidores</h2>
     <small><a href="#inicio">(voltar)</a></small>
-    <p>inserir texto aqui</p>
-
+    <p>A arquitetura cliente servidor é uma arquitetura de aplicação distribuída, ou seja,
+         na rede existem os fornecedores de recursos ou serviços a rede, 
+         que são chamados de servidores, e existem os requerentes dos recursos ou serviços, denominados clientes.
+        O cliente não compartilha nenhum de seus recursos com o servidor, mas no entanto ele solicita alguma função do servidor, 
+        sendo ele, o cliente, responsável por iniciar a comunicação com o servidor, enquanto o mesmo aguarda requisições de entrada.</p>
+        <h3><strong>Problemas do <i>Modelo</i></strong></h3>
+        <p>Visto que a capacidade de oferecer serviços ou recursos fica centralizada na figura do servidor, surge um problema, o que fazer quando o número de requisições dos clientes ultrapassa a capacidade computacional do servidor?
+         Essa pergunta não tem uma resposta de alta eficiência para aplicações em redes de computadores. A sobrecarga de servidores é um problema real apesar de a capacidade dos servidores ter aumentado consideravelmente na última década.
+        Além do fato de algumas requisições não serem atendidas, pela sobrecarga do servidor, no modelo cliente servidor, ainda há o fato de que o modelo não é robusto, ou seja, se um servidor crítico falha, os requisições já feitas pelos clientes, não poderão ser atendidas.
+        Esse motivos são a base para a concepção das redes Peer-to-peer.</p>
     <h2 id="linguagens">Linguagens de Programação</h2>
     <small><a href="#inicio">(voltar)</a></small>
-    <p>inserir texto aqui</p>
+    <p>Existem dois tipos de linguagens para desenvolvermos para internet: as linguagens client-side e as linguagens server-side. Você pode ver estes nomes meio diferentes em outros lugares como por exemplo, front-end, se referindo às linguagens client-side e back-end se referindo às linguagens server-side. Não se preocupe, são a mesma coisa. Mas nesse texto, para que você possa entender melhor, vamos usar client-side e server-side.
+
+        As linguagens server-side são linguagens que o SERVIDOR entende. Isso quer dizer que vai escrever um código onde o servidor vai processá-lo e então vai mandar para o seu navegador a resposta.
+        
+        As linguagens client-side são linguagens onde apenas o seu NAVEGADOR vai entender. Quem vai processar essa linguagem não é o servidor, mas o seu browser.
+        
+        Por exemplo: se criarmos um script em linguagem back-end (PHP, Asp, Java, Ruby, etc) que apenas calcula a soma de 2 + 2, será o SERVIDOR (ou back, o server) que calculará este resultado. Se fizermos esse cálculo em alguma linguagem front-end, como o JavaScript, quem calculará essa conta é o BROWSER do usuário. Por isso o termo client ou front.
+        
+        </p>
 
 
     <h3>ler mais sobre o assunto ( fontes de pesquisa )</h3>
     <ul>
-       <li><a href=""></a></li>
+       <li><a href="https://www.gta.ufrj.br/ensino/eel878/redes1-2016-1/16_1/p2p/modelo.html#:~:text=A%20arquitetura%20cliente%20servidor%20%C3%A9,recursos%20ou%20servi%C3%A7os%2C%20denominados%20clientes." target="_blank">Arquitetura Cliente-Servidor</a></li>
 
         <li><a href="https://brasilescola.uol.com.br/informatica/internet.htm#:~:text=A%20hist%C3%B3ria%20da%20internet%20teve,para%20fins%20privados%20e%20comerciais." target="_blank">Brasil Escola - História da Internet</a></li>
     </ul>
