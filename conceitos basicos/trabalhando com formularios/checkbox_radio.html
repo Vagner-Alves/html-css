@@ -9,20 +9,20 @@
     <form action="" method="GET">
         <h3>Voce Escolheu : Pizza de Calabresa</h3>
         <p>Quais adicionais voce deseja?</p>
-        <input type="checkbox" name="queijo" id=""> + queijo <br>
-        <input type="checkbox" name="bacon"> + bacon <br>
-        <input type="checkbox" name="azeitona"> + azeitona <br>
-        <input type="checkbox" name="catupiri"> + catupiri <br>
+        <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional[]" value="bacon"> + bacon <br>
+        <input type="checkbox" name="opcional[]" disabled ="azeitona"> + azeitona <br>
+        <input type="checkbox" name="opcional[]" value="catupiri"> + catupiri <br>
 
         <p>Borda Recheada ?</p>
-        <input type="radio" name="sim" id="" > sim <br>
-        <input type="radio" name="nao"> não
+        <input type="radio" name="borda" value="sim" id="" > sim <br>
+        <input type="radio" name="borda" value="nao"> não
 
         <p>Bebidas</p>
-        <input type="checkbox" name="refrigerante"> refrigerante <br>
-        <input type="checkbox" name="agua" id=""> agua <br>
-        <input type="checkbox" name="suco" id=""> suco <br>
-        <input type="checkbox" name="nenhum" id=""> nenhum
+        <input type="checkbox" name="bebida" value="refrigerante"> refrigerante <br>
+        <input type="checkbox" name="bebida" value="agua"> agua <br>
+        <input type="checkbox" name="bebida" value="suco"> suco <br>
+        <input type="checkbox" name="bebida" value="nenhum"> nenhum
 
     </form>
 </body>
