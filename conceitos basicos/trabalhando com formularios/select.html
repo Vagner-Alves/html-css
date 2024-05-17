@@ -9,12 +9,15 @@
     <form action="" method="GET">
         <label for="">Nome: </label> <input type="text" name="name"><br>
         <label for="">Cargo: </label> 
+
         <select name="role" id="">
+            <option value="default" selected>Selecione um Cargo</option>
             <option value="manager">Gerente de Projetos</option>
             <option value="frontend">Front End</option>
             <option value="backend">Back End</option>
             <option value="devops">DevOps</option>
         </select>
+
         <br>
         <label for="">Assunto: </label> <input type="text" name="subject" id="" ><br>
         <button type="submit">Enviar</button>
