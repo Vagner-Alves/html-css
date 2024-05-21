@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FieldSets</title>
+    <style>
+        .row{
+            margin: 8px;
+        }
+
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+    </style>
 </head>
 <body>
     <h2>Formulário de Cadastro</h2>
@@ -30,13 +42,18 @@
     </div>
 
     <div class="row">
-        <label for="">Celular ( Telefone ): </label> <input type="text">
+        <label for="">Celular: </label> <input type="text">
         <label for="">Whatsapp: </label> <input type="text" name="" id="">
     </div>
 
     <div class="row">
         <label for="">Linkedln: </label> <input type="text">
         <label for="">Github: </label> <input type="text" name="" id="">
+    </div>
+
+    <div>
+         <button>Enviar Formulário</button> 
+        <button type="reset">Limpar</button>
     </div>
 </body>
 </html>
