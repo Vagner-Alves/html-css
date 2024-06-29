@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tags HTML estrutural</title>
+    <style>
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        nav ul li a{
+            padding: 10px 15px;
+            color: red;
+            text-decoration: none;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        nav ul li a:hover{
+            color: white;
+            background-color: blue;
+        
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Aqui está o cabeçalho</h1>
+        <p>aqui está o cabeçalho</p>
+        <nav>
+            <ul>
+                <li><a href="">item 1</a></li>
+                <li><a href="">item 2</a></li>
+                <li><a href="tel:+55819102903">item 3</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
 
