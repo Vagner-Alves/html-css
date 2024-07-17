@@ -8,9 +8,19 @@
         kbd{
             border: solid 2px black;
         }
-        code{
+        pre {
+            background-color: #f1f1f1;
+        }
+        pre>code{
             color: mediumorchid;
         } 
+        pre > p{
+            font-style: italic;
+        }
+        code{
+            color: blueviolet;
+        }
+      
     </style>
 </head>
 <body>
@@ -20,10 +30,16 @@
     <main>
         <p>para copiar textos no navegador pressione <kbd>CTRL</kbd> + <kbd>C</kbd></p>
 
-        <p>para mudar a cor da pagína do navegador use o comando <code>background-color</code></p>
+        <details>
+            <summary>como mudar a cor da página no navegador?</summary>
+            <p>para mudar a cor da pagína do navegador use o comando <code>background-color</code></p>
+        </details>
+
+      
 
         <p>exemplo de como fazer isso:</p>
         <pre>
+            <p> esse é um código CSS</p>
             <code>
                 body {
                     background-color: purple;
@@ -31,7 +47,7 @@
                 }
             </code>
         </pre>
-        <p> esse é um código CSS</p>
+        
     </main>
     <footer></footer>
 </body>
