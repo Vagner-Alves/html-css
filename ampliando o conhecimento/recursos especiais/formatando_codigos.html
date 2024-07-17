@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code, Kbd e pre</title>
+    <style>
+        kbd{
+            border: solid 2px black;
+        }
+        code{
+            color: mediumorchid;
+        } 
+    </style>
 </head>
 <body>
     <header>
         <h1>Fontes Monoespaçadas</h1>
     </header>
     <main>
-        <p>para copiar textos no navegador pressione <kbd>CTRL + C</kbd>  </p>
+        <p>para copiar textos no navegador pressione <kbd>CTRL</kbd> + <kbd>C</kbd></p>
+
+        <p>para mudar a cor da pagína do navegador use o comando <code>background-color</code></p>
+
+        <p>exemplo de como fazer isso:</p>
+        <pre>
+            <code>
+                body {
+                    background-color: purple;
+                    text-align: center;
+                }
+            </code>
+        </pre>
+        <p> esse é um código CSS</p>
     </main>
     <footer></footer>
 </body>
