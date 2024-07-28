@@ -7,7 +7,7 @@
 </head>
 <body>
     <input type="text"  id="busca">
-    <p id="descricao">
+    <p id="descricao"> 
          </p>Celular dobrável passa aquela sensação de que é um produto vindo do futuro. As fabricantes de smartphones vêm tentando convencer
           que vale a pena migrar do formato em barra para essas novas telas. Vale a pena usar um telefone com essa tecnologia?
         O desempenho já é bastante parecido com o dos celulares mais caros que não dobram. 
@@ -18,13 +18,24 @@
             let descriptionObject = document.getElementById('descricao');
             let textToSearch = descriptionObject.innerHTML;
 
-            function makeSearch(busca){
-                const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`,'ig'); 
-                const ocurrences = textToSearch.match(regex);
-                descriptionObject.innerHTML = textToSearch.replace(regex,`<mark>${busca}</mark>`)
+            function makeSearch(busca) {
+         // Limpar a marcação antes de buscar (opcional)
+        descriptionObject.innerHTML = textToSearch;
+
+            const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, 'gi');
+            const ocurrences = textToSearch.match(regex);
+
+            descriptionObject.innerHTML = textToSearch.replace(regex, `<mark class="highlight">${busca}</mark>`);
             }
 
-            searchField.addEventListener('keyup', (e) => makeSearch(e.target.value));
+        // Limpar a marcação ao limpar o campo
+        searchField.addEventListener('input', (e) => {
+            if (e.target.value === '') {
+                descriptionObject.innerHTML = textToSearch;
+            } else {
+            makeSearch(e.target.value);
+         }
+            });
         </script>
 </body>
 
