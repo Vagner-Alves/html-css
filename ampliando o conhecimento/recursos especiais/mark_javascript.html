@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando JavaScript</title>
+</head>
+<body>
+    <input type="text"  id="busca">
+    <p id="descricao">
+         </p>Celular dobrável passa aquela sensação de que é um produto vindo do futuro. As fabricantes de smartphones vêm tentando convencer
+          que vale a pena migrar do formato em barra para essas novas telas. Vale a pena usar um telefone com essa tecnologia?
+        O desempenho já é bastante parecido com o dos celulares mais caros que não dobram. 
+        A proteção da tela também evoluiu, mas ainda é a parte mais frágil desses aparelhos.</p>
+
+        <script>
+            let searchField = document.getElementById('busca');
+            let descriptionObject = document.getElementById('descricao');
+            let textToSearch = descriptionObject.innerHTML;
+
+            function makeSearch(busca){
+                const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`,'ig'); 
+                const ocurrences = textToSearch.match(regex);
+                descriptionObject.innerHTML = textToSearch.replace(regex,`<mark>${busca}</mark>`)
+            }
+
+            searchField.addEventListener('keyup', (e) => makeSearch(e.target.value));
+        </script>
+</body>
+
+</html>
